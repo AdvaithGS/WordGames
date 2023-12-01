@@ -1,6 +1,4 @@
-git remote add origin https://github.com/AdvaithGS/WordGames.git
-  git branch -M main
-  git push -u origin mainfrom random import random
+from random import random
 d = {}
 
 class Grouper(str):
