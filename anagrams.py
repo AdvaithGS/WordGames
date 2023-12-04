@@ -1,15 +1,32 @@
 from Classes import Grouper
-from pickle import dump
+from pickle import load
+from termcolor import colored
 
-g = Grouper({},True)
-with open('anagrams.txt') as f:
- for i in f:
-  x = i.strip().split()
-  g.Initiate(x[0])
-  for i in range(1,len(x)):
-   g.Associate(x[i],x[0])
+f = open('anagrams.dat','rb')
+g : Grouper = load(f)
+f.close()
 
 
-f = open('anagrams.dat','wb')
-dump(g,f)
-
+for n in range(1, int(input("Rounds: ")) + 1):
+ rw = g.RandomWord()
+ l = g.GetGroup(rw,False)
+ correct = 0
+ total = len(l)
+ color = 'white'
+ x = ''
+ while l:
+  print(colored(f'{n}. ' + rw + f" ({correct}/{total})",color),end = ': ')
+  x = input()
+  try:
+   l.remove(x)
+   correct += 1
+   color = 'green'
+  except:
+   color = 'red'
+  if x == '.q':
+   for i in l:
+    print(i,end = ' ')
+   print()
+   break
+ else:
+  print(colored(f'{n}. ' + rw + f" ({correct}/{total})",'green'))

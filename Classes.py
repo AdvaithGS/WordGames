@@ -1,9 +1,8 @@
-from random import random
+from random import random,choice
 
 class Grouper():
   def __init__(self,d, rigid : bool):
     self.d = d
-    self.d1 = {}
     self.rigid = rigid
     
   def Associate(self,x, y):
@@ -33,8 +32,10 @@ class Grouper():
         if j == y:
           l = self.d[i]
           if not include:
-            l.remove()
+            l.remove(y)
           return l
+  def RandomWord(self):
+    return choice(self.d[choice(list(self.d.keys()))])
   def __str__(self):
     return str([self.d[i] for i in self.d])
     
