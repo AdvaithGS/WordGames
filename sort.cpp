@@ -26,10 +26,9 @@ int main(){
  std::string line;
  while (f){
   std::getline(f,line);
-  if (line.size() < 3){
+  if (line.size() < 4){
    continue;
   }
-  print(line);
   d[eval(line)].push_back(line);
  }
  f.close();	
