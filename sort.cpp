@@ -22,18 +22,18 @@ std::map <std::string,std::vector<std::string>> d;
 int main(){
 
  std::ifstream f;
- f.open("words.txt" , std::ios::in);
+ f.open("english.txt" , std::ios::in);
  std::string line;
  while (f){
   std::getline(f,line);
   if (line.size() < 3){
    continue;
   }
-  //std::cout << line << ' ' << eval(line) << '\n';
+  print(line);
   d[eval(line)].push_back(line);
  }
- f.close();
-
+ f.close();	
+ print("Completed reading file");
  std::ofstream f1;
  f1.open("anagrams.txt",std::ios::out);
  for(auto i:d){
