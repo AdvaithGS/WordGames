@@ -24,8 +24,7 @@ int main(){
  std::ifstream f;
  f.open("english.txt" , std::ios::in);
  std::string line;
- while (f){
-  std::getline(f,line);
+ while (std::getline(f,line)){
   if (line.size() < 4){
    continue;
   }
