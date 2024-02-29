@@ -2,7 +2,7 @@ pretext, affectation, dissembling, delusion, facade, ostentation, pretense
 pliable, amenable, fictile, facile, tractable, yieldable
 obstinate, disaccordant, dissentient, contumacious, insubordinate
 controvert, countervail, evert, repudiate, oppugn, gainsay, disprove
-apposite, apropos, annex, condign, expedient, normative, appropriate
+apposite, apropos, condign, expedient, normative, appropriate
 abjure, abrogate, obviate, rescind, renounce
 negotious, active
 abridge, abbreviate
@@ -34,4 +34,3 @@ farcical, absurd, comical
 inexorable, relentless, indefatigable, inevitable
 infallible, unerring, certain
 iniquitous, wrong, unjust, unfair
-
