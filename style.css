@@ -45,6 +45,7 @@ input {
   margin-top: 0.5em;
   margin-bottom: 1em;
   color: #ffa260;
+  text-align: center;
   transition: 0.25s;
 
   &:hover,
