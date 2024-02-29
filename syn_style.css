@@ -39,7 +39,7 @@ input {
   color: #ffa260;
   background-color: rgba(40, 37, 41, 0);
   padding: 0.5em;
-  width: 15vw;
+  width: max-content;
   font-size: 3vh;
   margin: 0.5vh;
   margin-top: 0.5em;
